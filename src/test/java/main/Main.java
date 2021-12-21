@@ -7,18 +7,18 @@ public class Main {
 	
 	
 	public static void main(String[] args) {
-		String token = "OTE4NDQ5ODg1ODQ4NjY2MTQy.YbHbHA.84YgXY7aVUGbObFHhCuEWjxw44k";
+		String token = "token";
 		
 		JDABuilder jda = new JDABuilder(AccountType.BOT);
 		jda.setToken(token);
 		try {
-			System.out.println("디스코드봇 연결성공");
+			System.out.println("Discord Bot On!");
 			jda.addEventListeners(new ErBot());
 			jda.build();
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
-			System.out.println("연결실패");
+			System.out.println("fali");
 		}
 	}
 }
